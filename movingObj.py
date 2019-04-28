@@ -12,12 +12,18 @@ class movingObj:
         self.accely = 0.0
 
     def update(self):
-	      
-        self.speedx += self.accelx
+	# acceleration changes velocity and velocity changes position
+		
+	# add acceleration
+	self.speedx += self.accelx
         self.speedy += self.accely
+	
+	# update speed / velocity 
         self.x += self.speedx
         self.y += self.speedy
-				self.accelx = self.accely = 0.0
+	
+	# reset accel for next cycle
+        self.accelx = self.accely = 0.0
 		
     def applyForce(self, force) # force is tuple
         self.accelx += force[0]
