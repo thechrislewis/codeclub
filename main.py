@@ -16,9 +16,7 @@ screenW = 640
 screenH = 480
 
 bounce = pgm.Vector2(1,-1)
-
 gravity = pgm.Vector2(0,0.2)
-drag = pgm.Vector2(0,-0.1)
 
 class movingObj:
 
@@ -32,18 +30,23 @@ class movingObj:
 
     def checkBoundary(self):
 
-        if (self.pos.y + self.velocity.y) > (screenH - self.h): 
-            self.velocity.y = -self.velocity.y
-
-
+        if (self.pos.y  > screenH: 
+            self.pos.y = screenH
+	    self.velocity.y *= -1
+        
+        if self.pos.x < 0:
+            self.pos.x = 0
+            self.velocity.x *= -1
+        elif self.pos.x > screenX:
+            self.pos.x = screenW
+            self.velocity.x *= -1
+	 
     def update(self):
 		
-        self.checkBoundary()
         self.velocity += self.acceleration
-
         self.pos += self.velocity
-
         self.acceleration *= 0
+        self.checkBoundary()	    
 		
     def applyForce(self, force): #forces accumulate before update 
         self.acceleration += force
