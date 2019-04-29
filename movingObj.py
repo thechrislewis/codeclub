@@ -13,15 +13,15 @@ class movingObj:
 
     def checkBoundary(self):
 
-        if (self.pos.y  > screenH: 
-            self.pos.y = screenH
+        if (self.pos.y + self.h  > screenH: 
+            self.pos.y = screenH - self.h
 	    self.velocity.y *= -1
         
         if self.pos.x < 0:
             self.pos.x = 0
             self.velocity.x *= -1
-        elif self.pos.x > screenX:
-            self.pos.x = screenW
+        elif self.pos.x + self.w > screenX:
+            self.pos.x = screenW - self.w
             self.velocity.x *= -1
 	 
     def update(self):
