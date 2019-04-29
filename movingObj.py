@@ -12,7 +12,6 @@ class movingObj:
         self.colour = 0
 
     def checkBoundary(self):
-
         if (self.pos.y + self.h  > screenH: 
             self.pos.y = screenH - self.h
 	    self.velocity.y *= -1
@@ -25,7 +24,6 @@ class movingObj:
             self.velocity.x *= -1
 	 
     def update(self):
-		
         self.velocity += self.acceleration
         self.pos += self.velocity
         self.acceleration *= 0
