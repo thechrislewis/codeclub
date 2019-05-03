@@ -1,7 +1,7 @@
 import pygame
 import pygame.math as pgm
 from math import pi
-from movingObj import movingObj
+import movingObj as mob
 
 # Initialize the game engine
 pygame.init()
@@ -16,8 +16,7 @@ RED =   (255,   0,   0)
 screenW = 640
 screenH = 480
 
-bounce = pgm.Vector2(1,-1)
-gravity = pgm.Vector2(0,0.2)
+gravity = pgm.Vector2(0,0.5)
 
  
 # Set the height and width of the screen
@@ -30,7 +29,7 @@ pygame.display.set_caption("Example1")
 done = False
 clock = pygame.time.Clock()
 
-obj = movingObj(screenW/2,20)
+obj = mob.movingObj(screenW/2,20,screenW, screenH)
  
 while not done:
  
@@ -51,7 +50,7 @@ while not done:
     obj.applyForce(gravity)
      
     obj.update()
-    obj.show()
+    obj.show(screen)
     
     pygame.display.flip()
  
