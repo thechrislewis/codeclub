@@ -91,8 +91,7 @@ print("Goodbye!!")
 '''
 UPGRADES:
 
-1. Add diffrent directions ( Up, Down, South East etc. )
-2. Create a bigger map with your own choice of theme 
+1. Create a bigger map with your own choice of theme 
 
 '''
 
