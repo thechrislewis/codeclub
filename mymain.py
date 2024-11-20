@@ -28,8 +28,7 @@ print(response.json())
 
 #get movie information
 print("######## Movie ########")
-
-response = lib.get_url('https://api.themoviedb.org/3/discover/movie?api_key=256da2d742d5a5979790e6833447e4b4').json()
+).json()
 
 # create empty lists to save the results
 Popularity = []
