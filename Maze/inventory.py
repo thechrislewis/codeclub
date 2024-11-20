@@ -86,6 +86,6 @@ print("Goodbye!!")
 UPGRADES:
 
 1. Add code to 'Drop' an item from your inventory ( hint: use inventory.pop(Item) )
-
+See inventory2.py
 
 '''
