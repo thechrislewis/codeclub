@@ -1,0 +1,97 @@
+{
+    "intro": "Welcome",
+    "start": "Hall",
+    "rooms": {
+        "Hall": {
+            "Desc": "The start of the journey",
+            "North": "Library",
+            "East": "Dining Room",
+            "West": "Pool"
+        },
+        "Library": {
+            "Desc": "The Library is full of many old musty books but lurking behind a bookcase is a blind monster.",
+            "South": "Hall",
+            "North": "Door",
+            "East": "Armoury"
+        },
+        "Armoury": {
+            "Desc": "A room filled with ancient weapons and armour, some still gleaming.",
+            "West": "Library",
+            "Item": "Sword"
+        },
+        "Secret Passage": {
+            "Desc": "A hidden corridor with strange markings on the walls.",
+            "West": "Library",
+            "East": "Cave",
+            "Item": "Dark Room Key",
+            "Dark": true
+        },
+        "Wizard’s Study": {
+            "Desc": "A mystical study filled with ancient scrolls and glowing potions.",
+            "West": "Observatory",
+            "Item": "Magic Tome"
+        },
+        "Abandoned Laboratory": {
+            "Desc": "A forgotten lab with broken equipment and shattered glass vials.",
+            "West": "Greenhouse",
+            "Item": "Health Potion"
+        },
+        "Garden Shed": {
+            "Desc": "A small shed with rusted tools and an old lantern.",
+            "West": "Courtyard",
+            "Item": "Lantern"
+        },
+        "Wine Cellar": {
+            "Desc": "A damp, candle-lit cellar filled with barrels of wine and hidden secrets.",
+            "North": "Dining Room",
+            "Item": "Silver Key"
+        },
+        "Crypt": {
+            "Desc": "A dark chamber filled with eerie tombs and whispers from the past.",
+            "West": "Deeper Cave",
+            "Item": "Ancient Amulet",
+            "Dark": true
+        },
+        "Ruined Chapel": {
+            "Desc": "A ruined place of worship, with flickering candles and shattered stained glass.",
+            "North": "Courtyard",
+            "Item": "Mystic Ring"
+        },
+        "Mirror Room": {
+            "Desc": "A mysterious room full of enchanted mirrors reflecting strange visions.",
+            "West": "Portal",
+            "Item": "Enchanted Mirror Shard"
+        },
+        "Forbidden Chamber": {
+            "Desc": "A secret chamber hidden behind the locked door, radiating ancient power.",
+            "South": "Door"
+        },
+        "Dining Room": {
+            "Desc": "A large room filled with round fancy-looking tables.",
+            "East": "Kitchen",
+            "West": "Hall",
+            "Item": "Golden Goblet"
+        },
+        "Kitchen": {
+            "Desc": "A white tiled room full of smoke. A mysterious shape is moving around the place.",
+            "West": "Dining Room",
+            "Item": "Frying Pan"
+        },
+        "Cave": {
+            "Desc": "A small crack in the wall reveals a dark, empty, and wet cave.",
+            "West": "Greenhouse",
+            "East": "Deeper Cave",
+            "Dark": true
+        },
+        "Deeper Cave": {
+            "Desc": "The cave continues to a large dark chamber where ??? stops you from going deeper.",
+            "East": "Deepest Cave",
+            "Dark": true
+        },
+        "Deepest Cave": {
+            "Desc": "A large cave where magical crystals line the walls, but ??? lies on the floor.",
+            "East": "Portal",
+            "Dark": true
+        }
+    }
+}
